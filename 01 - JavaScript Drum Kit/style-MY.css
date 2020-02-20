@@ -1,0 +1,47 @@
+html {
+    font-size: 10px;
+    box-sizing: border-box;
+    background: url("https://picsum.photos/1200/1920")bottom center;
+    background-size: cover;
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+.keys {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.key {
+    display: flex;
+    flex-direction: column;
+    border: .3rem solid chocolate;
+    border-radius: 0.2rem;
+    width: 10rem;
+    margin: .8rem;
+    text-align: center;
+    padding: 1rem 0.5rem;
+    transition: all .07s ease;
+}
+
+kbd {
+    color: rgb(255, 255, 255);
+    font-size: 6rem;
+}
+
+.sound {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: chocolate;
+}
+
+.playing {
+    transform: scale(1.1);
+    border: .3rem solid chocolate;
+    box-shadow: 0 0 1rem rgba(250, 113, 21, 0.788);
+}
