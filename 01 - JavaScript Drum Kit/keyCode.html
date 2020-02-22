@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Event keyCodes</title>
+    <link rel="stylesheet" href="keyCode-style.css">
+</head>
+
+<body>
+    <section id="pressBtn">
+        <button>Press any key to get the JavaScript event keycode</button>
+    </section>
+
+    <section id="codeShow">
+        <div class="code">
+            <kbd>a</kbd>
+        </div>
+        <div class="event">
+            <div class="card">
+                <div class="card-header">event.code</div>
+                <div class="card-body"></div>
+            </div>
+            <div class="card">
+                <div class="card-header">event.key</div>
+                <div class="card-body"></div>
+            </div>
+            <div class="card">
+                <div class="card-header">event.which</div>
+                <div class="card-body"></div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const codeShow = document.getElementById('codeShow');
+        const pressBtn = document.getElementById('pressBtn');
+        const eKeyCode = document.getElementsByTagName('kbd')[0];
+        const eCode = document.getElementsByClassName('card-body')[0];
+        const eKey = document.getElementsByClassName('card-body')[1];
+        const eWhich = document.getElementsByClassName('card-body')[2];
+       
+        codeShow.style.display = "none";
+        
+        function showCode(e) {
+            pressBtn.style.display = "none";
+            codeShow.style.display = "block";
+            eKeyCode.innerHTML = e.keyCode;
+            eCode.innerHTML = e.code;
+            eKey.innerHTML = e.key;
+            eWhich.innerHTML = e.which;
+            console.log(e.key);
+        };
+
+        document.addEventListener('keydown', showCode);
+
+    </script>
+</body>
+
+</html>

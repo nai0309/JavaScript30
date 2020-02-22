@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Handlee&display=swap');
+html {
+    height: 100vh;
+    background: rgb(44, 64, 87);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Handlee', ;
+}
+
+body {
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#pressBtn {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    font-size: 2rem;
+    border-radius: 0.2rem;
+    background-color: wheat;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    box-shadow: 0 0 30px rgb(25, 31, 37);
+    transition: all 0.5s linear;
+}
+
+button:hover {
+    transform: translate(5px, -5px);
+}
+
+.code {
+    text-align: center;
+}
+
+kbd {
+    font-size: 30rem;
+    color: wheat;
+    text-shadow: 0 0 30px rgb(25, 31, 37);
+}
+
+.event {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card {
+    margin: 0 1rem;
+    border: 0.2rem solid wheat;
+    border-radius: 0.1rem;
+    font-size: 1.5rem;
+    min-width: 25vw;
+}
+
+.card-header {
+    letter-spacing: 0.1rem;
+    background-color: wheat;
+    padding: 0.5rem 0;
+}
+
+.card-body {
+    font-size: 3rem;
+    color: wheat;
+    height: 10vh;
+    padding: 0.5rem 1rem;
+    line-height: 10vh;
+}
